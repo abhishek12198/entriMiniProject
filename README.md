@@ -187,3 +187,13 @@ Possible future improvements include:
 # Author
 
 Employee Data Analysis Project using Python and Google Colab.
+
+---
+
+# ML Assignment 3 — Classification
+
+Supervised classification on the Wisconsin Diagnostic Breast Cancer dataset from scikit-learn.
+
+Notebook: [`ML_Assignment_3_Classification.ipynb`](ML_Assignment_3_Classification.ipynb)
+
+The notebook loads the dataset, checks for missing values, scales the features, and trains five classifiers on one stratified holdout: logistic regression, decision tree, random forest, support vector machine, and k-nearest neighbors. On the test set, logistic regression and the SVM tie for the best malignant F1 (0.9762). The decision tree is the weakest (malignant F1 0.8864). A 5-fold check on the training set ranks logistic regression first.
