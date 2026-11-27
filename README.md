@@ -197,3 +197,15 @@ Supervised classification on the Wisconsin Diagnostic Breast Cancer dataset from
 Notebook: [`ML_Assignment_3_Classification.ipynb`](ML_Assignment_3_Classification.ipynb)
 
 The notebook loads the dataset, checks for missing values, scales the features, and trains five classifiers on one stratified holdout: logistic regression, decision tree, random forest, support vector machine, and k-nearest neighbors. On the test set, logistic regression and the SVM tie for the best malignant F1 (0.9762). The decision tree is the weakest (malignant F1 0.8864). A 5-fold check on the training set ranks logistic regression first.
+
+---
+
+# ML Assignment 5 — Clustering
+
+Clustering on the Iris dataset from scikit-learn. The species column is dropped before either model is fit.
+
+Notebook: [`ML_Assignment_5_Clustering.ipynb`](ML_Assignment_5_Clustering.ipynb)
+
+Open it in Colab and use Runtime → Run all: [Open in Colab](https://colab.research.google.com/github/abhishek12198/entriMiniProject/blob/main/ML_Assignment_5_Clustering.ipynb).
+
+K-Means (k = 3) and Ward hierarchical clustering are fit on the four scaled measurements. One group is separated at short petals. The other two groups sit next to each other. K-Means splits that overlap more evenly (sizes 47, 50, and 53). The tree keeps a larger branch (sizes 30, 49, and 71). The adjusted Rand index between the two partitions is 0.6255.
