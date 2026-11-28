@@ -223,3 +223,15 @@ Dataset file: [`data/CarPrice.csv`](data/CarPrice.csv)
 Open it in Colab and use Runtime → Run all: [Open in Colab](https://colab.research.google.com/github/abhishek12198/entriMiniProject/blob/main/Intermediate_Assessment_Car_Price.ipynb).
 
 Five regressors share one holdout. The random forest is the best of them: test R-squared 0.9592, mean absolute error about $1,252. Engine size and curb weight account for most of that fit. A grid search on the forest did not improve the holdout, so the original 200-tree forest is the model that is kept.
+
+---
+
+# Module End Assignment 5 — Diabetes progression
+
+A neural network for one-year diabetes progression, using the scikit-learn diabetes dataset.
+
+Notebook: [`Module_End_Assignment5_Diabetes_ANN.ipynb`](Module_End_Assignment5_Diabetes_ANN.ipynb)
+
+Open it in Colab and use Runtime → Run all: [Open in Colab](https://colab.research.google.com/github/abhishek12198/entriMiniProject/blob/main/Module_End_Assignment5_Diabetes_ANN.ipynb).
+
+The features are checked for missing values and standardised on the training patients. A first network has one hidden layer of 8 ReLU units. A second network uses two ReLU layers, 64 and 16 units, a lower learning rate, and a longer training run. On the holdout, test mean squared error falls from 2,945.9 to 2,763.0, and R-squared rises from 0.4440 to 0.4785. Body mass index and the triglyceride measure are the strongest positive associations with progression.
