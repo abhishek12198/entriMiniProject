@@ -209,3 +209,17 @@ Notebook: [`ML_Assignment_5_Clustering.ipynb`](ML_Assignment_5_Clustering.ipynb)
 Open it in Colab and use Runtime → Run all: [Open in Colab](https://colab.research.google.com/github/abhishek12198/entriMiniProject/blob/main/ML_Assignment_5_Clustering.ipynb).
 
 K-Means (k = 3) and Ward hierarchical clustering are fit on the four scaled measurements. One group is separated at short petals. The other two groups sit next to each other. K-Means splits that overlap more evenly (sizes 47, 50, and 53). The tree keeps a larger branch (sizes 30, 49, and 71). The adjusted Rand index between the two partitions is 0.6255.
+
+---
+
+# Intermediate Assessment — Car price regression
+
+Regression on the American car-price survey. The question is which measurements move price, and how closely they describe it.
+
+Notebook: [`Intermediate_Assessment_Car_Price.ipynb`](Intermediate_Assessment_Car_Price.ipynb)
+
+Dataset file: [`data/CarPrice.csv`](data/CarPrice.csv)
+
+Open it in Colab and use Runtime → Run all: [Open in Colab](https://colab.research.google.com/github/abhishek12198/entriMiniProject/blob/main/Intermediate_Assessment_Car_Price.ipynb).
+
+Five regressors share one holdout. The random forest is the best of them: test R-squared 0.9592, mean absolute error about $1,252. Engine size and curb weight account for most of that fit. A grid search on the forest did not improve the holdout, so the original 200-tree forest is the model that is kept.
